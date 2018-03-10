@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  ZWTabControllerDemo
+//
+//  Created by 黄鹏 on 2018/3/10.
+//  Copyright © 2018年 ytandhr. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#pragma mark -- 导入类
+#import "UIView+frame.h"
+
+#pragma mark -- 自定义常量
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT  [UIScreen mainScreen].bounds.size.height
+#define TABBARH 64.f
+
+#pragma mark -- 自定义Log
+
+#ifdef DEBUG
+
+#define ZSLog(...) printf("ZSBG: [%s] [%s] line:(%d): %s\n", [[NSDate date].description UTF8String], [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:__VA_ARGS__]UTF8String])
+
+#else
+
+#define ZSLog(...)
+
+#endif
+
+#endif /* PrefixHeader_pch */

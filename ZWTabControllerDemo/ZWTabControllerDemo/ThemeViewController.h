@@ -1,5 +1,5 @@
 //
-//  ZWTabViewController.h
+//  ThemeViewController.h
 //  ZWTabControllerDemo
 //
 //  Created by 黄鹏 on 2018/3/10.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZWTabViewController : UIViewController
+@interface ThemeViewController : UIViewController
 
 @end
