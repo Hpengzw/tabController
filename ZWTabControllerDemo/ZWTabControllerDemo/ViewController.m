@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ZWTabViewController.h"
+#import "TabChildViewController.h"
 
 @interface ViewController ()
 
@@ -21,7 +21,8 @@
 }
 
 - (IBAction)jumpToTabContrller:(UIButton *)sender {
-    ZWTabViewController *vc = [[ZWTabViewController alloc]init];
+    TabChildViewController *vc = [[TabChildViewController alloc]init];
+    vc.baseControllerTitle = @"父子控制器";
     vc.titles = @[@"界面1",@"界面2",@"界面3"];
     vc.classes = @[@"ThemeViewController",@"ThemeViewController",@"ThemeViewController"];
     
