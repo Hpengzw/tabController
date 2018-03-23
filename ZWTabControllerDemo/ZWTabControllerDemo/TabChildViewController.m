@@ -14,6 +14,9 @@
 
 @property (nonatomic, strong)   UIButton    *publishAcitonButton;
 @property (nonatomic, strong)   TabBottomBar  *bottomBar;
+/// description
+@property (nonatomic, assign)   NSInteger  offset;
+
 @end
 
 @implementation TabChildViewController
@@ -65,6 +68,8 @@
     return _bottomBar;
 }
 
+#pragma  mark - TabBottomBarDelegate
+
 - (void)back {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -76,7 +81,10 @@
 
 ///更新
 - (void)update {
-    self.bottomBar.backgroundColor = ZSRandomColor();
+    if (self.contentOffset != self.offset) {
+        self.bottomBar.backgroundColor = ZSRandomColor();
+        self.offset = self.contentOffset;
+    }
 }
 
 @end

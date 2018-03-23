@@ -189,7 +189,7 @@
     }
 }
 
-- (NSInteger)offsetX {
+- (NSInteger)contentOffset {
     return (NSInteger)self.baseColletionView.contentOffset.x/WIDTH;
 }
 

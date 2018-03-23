@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-CF_EXPORT UIColor *ZSRandomColor();
+CF_EXPORT UIColor *ZSRandomColor(void);
 
