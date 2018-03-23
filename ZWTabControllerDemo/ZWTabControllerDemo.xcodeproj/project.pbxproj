@@ -18,6 +18,9 @@
 		1260F9382053988B000B40FF /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1260F9372053988B000B40FF /* UIView+frame.m */; };
 		1260F93F2053A49F000B40FF /* ThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1260F93E2053A49F000B40FF /* ThemeViewController.m */; };
 		1260F9422053B189000B40FF /* TabChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1260F9412053B189000B40FF /* TabChildViewController.m */; };
+		12EF62D42064D5C600F04EB8 /* TabBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EF62D32064D5C600F04EB8 /* TabBottomBar.m */; };
+		12EF62D72064D5DD00F04EB8 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EF62D62064D5DD00F04EB8 /* PushViewController.m */; };
+		12EF62DD2064DE4B00F04EB8 /* GlobalUitilitis.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EF62DC2064DE4B00F04EB8 /* GlobalUitilitis.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,12 @@
 		1260F93E2053A49F000B40FF /* ThemeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeViewController.m; sourceTree = "<group>"; };
 		1260F9402053B188000B40FF /* TabChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabChildViewController.h; sourceTree = "<group>"; };
 		1260F9412053B189000B40FF /* TabChildViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabChildViewController.m; sourceTree = "<group>"; };
+		12EF62D22064D5C600F04EB8 /* TabBottomBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBottomBar.h; sourceTree = "<group>"; };
+		12EF62D32064D5C600F04EB8 /* TabBottomBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBottomBar.m; sourceTree = "<group>"; };
+		12EF62D52064D5DD00F04EB8 /* PushViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		12EF62D62064D5DD00F04EB8 /* PushViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+		12EF62DB2064DE4B00F04EB8 /* GlobalUitilitis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUitilitis.h; sourceTree = "<group>"; };
+		12EF62DC2064DE4B00F04EB8 /* GlobalUitilitis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalUitilitis.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +92,14 @@
 				1260F9412053B189000B40FF /* TabChildViewController.m */,
 				1260F93D2053A49F000B40FF /* ThemeViewController.h */,
 				1260F93E2053A49F000B40FF /* ThemeViewController.m */,
+				12EF62D52064D5DD00F04EB8 /* PushViewController.h */,
+				12EF62D62064D5DD00F04EB8 /* PushViewController.m */,
+				12EF62D22064D5C600F04EB8 /* TabBottomBar.h */,
+				12EF62D32064D5C600F04EB8 /* TabBottomBar.m */,
 				1260F9362053988B000B40FF /* UIView+frame.h */,
 				1260F9372053988B000B40FF /* UIView+frame.m */,
+				12EF62DB2064DE4B00F04EB8 /* GlobalUitilitis.h */,
+				12EF62DC2064DE4B00F04EB8 /* GlobalUitilitis.m */,
 				1260F91F20538987000B40FF /* Main.storyboard */,
 				1260F92220538988000B40FF /* Assets.xcassets */,
 				1260F92420538988000B40FF /* LaunchScreen.storyboard */,
@@ -177,13 +192,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12EF62DD2064DE4B00F04EB8 /* GlobalUitilitis.m in Sources */,
 				1260F93F2053A49F000B40FF /* ThemeViewController.m in Sources */,
 				1260F9382053988B000B40FF /* UIView+frame.m in Sources */,
 				1260F91E20538987000B40FF /* ViewController.m in Sources */,
 				1260F92920538988000B40FF /* main.m in Sources */,
 				1260F93420539218000B40FF /* ZWTabTitleView.m in Sources */,
 				1260F9422053B189000B40FF /* TabChildViewController.m in Sources */,
+				12EF62D72064D5DD00F04EB8 /* PushViewController.m in Sources */,
 				1260F91B20538987000B40FF /* AppDelegate.m in Sources */,
+				12EF62D42064D5C600F04EB8 /* TabBottomBar.m in Sources */,
 				1260F931205389D2000B40FF /* ZWTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,8 +337,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 329TVQVAVE;
 				GCC_PREFIX_HEADER = ZWTabControllerDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = ZWTabControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wl.ZWTabControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -333,8 +353,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 329TVQVAVE;
 				GCC_PREFIX_HEADER = ZWTabControllerDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = ZWTabControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wl.ZWTabControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -53,6 +53,7 @@
 
 @protocol ZWTabViewControllerDelegate <NSObject>
 
+@optional
 //自定义父控制器导航栏右侧item
 - (UIView *)viewForBaseControllerRightBarButtonItem;
 

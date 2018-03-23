@@ -23,9 +23,9 @@
 - (IBAction)jumpToTabContrller:(UIButton *)sender {
     TabChildViewController *vc = [[TabChildViewController alloc]init];
     vc.baseControllerTitle = @"父子控制器";
-    vc.titles = @[@"界面1",@"界面2",@"界面3"];
+    vc.titles = @[@"界面1",@"界面2",@"我的界面3"];
     vc.classes = @[@"ThemeViewController",@"ThemeViewController",@"ThemeViewController"];
-    
+    vc.isUnequalTitle = YES;
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
     [self presentViewController:nav animated:YES completion:nil];
 }

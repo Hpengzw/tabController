@@ -1,15 +1,13 @@
 //
-//  ThemeViewController.h
+//  PushViewController.h
 //  ZWTabControllerDemo
 //
-//  Created by 黄鹏 on 2018/3/10.
+//  Created by huang ytand on 2018/3/23.
 //  Copyright © 2018年 ytandhr. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-
-@interface ThemeViewController : UIViewController
-
+@interface PushViewController : UIViewController
 
 @end

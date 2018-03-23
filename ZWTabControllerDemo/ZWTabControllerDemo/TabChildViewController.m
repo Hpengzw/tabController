@@ -7,11 +7,13 @@
 //
 
 #import "TabChildViewController.h"
+#import "TabBottomBar.h"
+#import "PushViewController.h"
 
-@interface TabChildViewController ()
+@interface TabChildViewController ()<TabBottomBarDelegate>
 
 @property (nonatomic, strong)   UIButton    *publishAcitonButton;
-
+@property (nonatomic, strong)   TabBottomBar  *bottomBar;
 @end
 
 @implementation TabChildViewController
@@ -50,5 +52,31 @@
     
 }
 
+- (UIView *)viewForBaseControllerBottomBar {
+    return self.bottomBar;
+}
+
+- (TabBottomBar *)bottomBar {
+    if (!_bottomBar) {
+        _bottomBar = [[TabBottomBar alloc]init];
+        _bottomBar.backgroundColor = [UIColor orangeColor];
+        _bottomBar.delegate = self;
+    }
+    return _bottomBar;
+}
+
+- (void)back {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)jump {
+    PushViewController *controller = [[PushViewController alloc]init];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+///更新
+- (void)update {
+    self.bottomBar.backgroundColor = ZSRandomColor();
+}
 
 @end

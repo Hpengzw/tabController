@@ -147,7 +147,7 @@
 
 #pragma mark - ZSFindTitleViewDelegate
 - (void)titleView:(ZWTabTitleView *)titleView didClickButtonAtIndex:(NSInteger)index {
-    [UIView animateWithDuration:0.0001 animations:^{
+    [UIView animateWithDuration:0.25 animations:^{
         _baseColletionView.contentOffset = CGPointMake(WIDTH *index, 0);
         [self update];//子类重写该方法，可监听标题按钮点击事件
     }];
@@ -182,9 +182,9 @@
             [self.delegate customLayoutForBaseControllerBottomBar:_bottomBar];
         }else {
             _bottomBar.wl_x = 0;
+            _bottomBar.wl_y = HEIGHT - TABBARH;
             _bottomBar.wl_width = WIDTH;
             _bottomBar.wl_height = TABBARH;
-            _bottomBar.wl_centerX = self.view.center.x;
         }
     }
 }

@@ -95,7 +95,7 @@
     self.selectBtn = sender;
 
     self.moveLine.wl_width = [self getButtonWidthAtIndex:sender.tag];
-    [UIView animateWithDuration:0.001 animations:^{
+    [UIView animateWithDuration:0.25 animations:^{
         self.moveLine.wl_centerX = sender.wl_centerX;
     }];
 
@@ -108,7 +108,7 @@
 - (void)bottomLineScollIndex:(NSInteger)index {
     UIButton *btn = self.btns[index];
     self.moveLine.wl_width = [self getButtonWidthAtIndex:index];
-    [UIView animateWithDuration:0.001 animations:^{
+    [UIView animateWithDuration:0.25 animations:^{
         self.moveLine.wl_centerX = btn.wl_centerX;
 
         self.selectBtn.selected = NO;
