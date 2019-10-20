@@ -27,13 +27,6 @@ Pod::Spec.new do |spec|
 
 
   spec.resources = "tabController/**/*.{xib}"
-  s.resource_bundles = {
-     'tabController' => [
-	   'tabController'/**/*.{xib,storyboard}',
-	   '*.{xcassets}'
-	]
-  }
-
 
   spec.frameworks = "UIKit"
 
