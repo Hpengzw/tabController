@@ -14,10 +14,10 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
 
 
-   spec.author             = { "huangpeng" => "1468924117@qq.com" }
+  spec.author             = { "huangpeng" => "1468924117@qq.com" }
 
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "9.0"
+  spec.platform     = :ios
+  spec.platform     = :ios, "9.0"
 
   spec.source       = { :git => "https://github.com/ytandhz/tabController.git", :branch => "master" }
 
@@ -35,6 +35,6 @@ Pod::Spec.new do |spec|
   }
 
 
-  # spec.frameworks = "UIKit"
+  spec.frameworks = "UIKit"
 
 end
