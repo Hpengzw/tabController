@@ -22,14 +22,14 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/ytandhz/tabController.git", :branch => "master" }
 
 
-  spec.source_files  = "ZWTabControllerDemo", "ZWTabControllerDemo/**/*.{h,m}"
-  #spec.public_header_files = "ZWTabControllerDemo/*.h"
+  spec.source_files  = "tabController", "tabController/**/*.{h,m}"
+  #spec.public_header_files = "tabController/*.h"
 
 
-  spec.resources = "ZWTabControllerDemo/**/*.{xib}"
+  spec.resources = "tabController/**/*.{xib}"
   s.resource_bundles = {
-     'ZWTabControllerDemo' => [
-	   'ZWTabControllerDemo'/**/*.{xib,storyboard}',
+     'tabController' => [
+	   'tabController'/**/*.{xib,storyboard}',
 	   '*.{xcassets}'
 	]
   }
