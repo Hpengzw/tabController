@@ -21,6 +21,7 @@
 		12EF62D42064D5C600F04EB8 /* TabBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EF62D32064D5C600F04EB8 /* TabBottomBar.m */; };
 		12EF62D72064D5DD00F04EB8 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EF62D62064D5DD00F04EB8 /* PushViewController.m */; };
 		12EF62DD2064DE4B00F04EB8 /* GlobalUitilitis.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EF62DC2064DE4B00F04EB8 /* GlobalUitilitis.m */; };
+		F69269C600DA9DD00DB4FC3E /* Pods_ZWTabControllerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3383651B48E73DED32343CEF /* Pods_ZWTabControllerDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,9 @@
 		12EF62D62064D5DD00F04EB8 /* PushViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
 		12EF62DB2064DE4B00F04EB8 /* GlobalUitilitis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUitilitis.h; sourceTree = "<group>"; };
 		12EF62DC2064DE4B00F04EB8 /* GlobalUitilitis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalUitilitis.m; sourceTree = "<group>"; };
+		3383651B48E73DED32343CEF /* Pods_ZWTabControllerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZWTabControllerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56089D36B4E88D33A4E53647 /* Pods-ZWTabControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWTabControllerDemo.debug.xcconfig"; path = "Target Support Files/Pods-ZWTabControllerDemo/Pods-ZWTabControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		792326B66FE444DA6B4BF4F1 /* Pods-ZWTabControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWTabControllerDemo.release.xcconfig"; path = "Target Support Files/Pods-ZWTabControllerDemo/Pods-ZWTabControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F69269C600DA9DD00DB4FC3E /* Pods_ZWTabControllerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +74,8 @@
 			children = (
 				1260F91820538987000B40FF /* ZWTabControllerDemo */,
 				1260F91720538987000B40FF /* Products */,
+				622DB9C2711ECCF1C960B729 /* Pods */,
+				88F98A801A96D9477CB46C2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +128,24 @@
 			path = ZWTabClass;
 			sourceTree = "<group>";
 		};
+		622DB9C2711ECCF1C960B729 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56089D36B4E88D33A4E53647 /* Pods-ZWTabControllerDemo.debug.xcconfig */,
+				792326B66FE444DA6B4BF4F1 /* Pods-ZWTabControllerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		88F98A801A96D9477CB46C2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3383651B48E73DED32343CEF /* Pods_ZWTabControllerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +153,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1260F92C20538988000B40FF /* Build configuration list for PBXNativeTarget "ZWTabControllerDemo" */;
 			buildPhases = (
+				3023072349B43D8DF56166C4 /* [CP] Check Pods Manifest.lock */,
 				1260F91220538987000B40FF /* Sources */,
 				1260F91320538987000B40FF /* Frameworks */,
 				1260F91420538987000B40FF /* Resources */,
@@ -186,6 +212,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3023072349B43D8DF56166C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZWTabControllerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1260F91220538987000B40FF /* Sources */ = {
@@ -334,6 +385,7 @@
 		};
 		1260F92D20538988000B40FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56089D36B4E88D33A4E53647 /* Pods-ZWTabControllerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -350,6 +402,7 @@
 		};
 		1260F92E20538988000B40FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792326B66FE444DA6B4BF4F1 /* Pods-ZWTabControllerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
