@@ -24,6 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.delegate = self;
+    
+    NSLog(@"%@",NSStringFromClass(self.class));
+    
 }
 
 - (void)didReceiveMemoryWarning {
