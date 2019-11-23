@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
  
-  spec.name         = "tabController"
+  spec.name         = "ZWTabControllerDemo"
   spec.version      = "0.0.1"
   spec.summary      = "A short description of tabController."
 
@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/ytandhz/tabController.git", :branch => "master" }
 
 
-  spec.source_files  = "tabController", "tabController/**/*.{h,m}"
+  spec.source_files  = "ZWTabControllerDemo/ZWTabClass/**/*.{h,m}"
   #spec.public_header_files = "tabController/*.h"
 
 
