@@ -18,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = ZSRandomColor();
+    
+    NSLog(@"just a test");
+    
 }
 
 - (void)didReceiveMemoryWarning {
